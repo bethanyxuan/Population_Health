@@ -1,0 +1,27 @@
+#b  
+#define Ywest, X1west, X2west, X3west
+Ywest<-Y[data$East==0]
+X1west<-X1[data$East==0]
+X2west<-X2[data$East==0]
+X3west<-X1[data$East==0]
+
+#c
+#use summary function to generate a summary for each
+summary(Yeast)
+summary(X1east)
+summary(X2east)
+summary(X3east)
+
+#d
+#use summary function to generate a summary for each
+summary(Ywest)
+summary(X1west)
+summary(X2west)
+summary(X3west)
+
+#e
+#use par to make eight picture in one graph
+par(mfrow=c(2,4)) 
+#plot boxplot for each
+boxplot(Yeast);boxplot(X1east);boxplot(X2east);boxplot(X3east);
+boxplot(Ywest);boxplot(X1west);boxplot(X2west);boxplot(X3west)
